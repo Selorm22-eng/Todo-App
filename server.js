@@ -25,10 +25,10 @@ const allowedOrigins = [
   'https://todo-app-pink-eight-29.vercel.app/'
 ];
 
-app.use(cors({
+/*app.use(cors({
   origin: allowedOrigins,
   credentials: true
-}));
+}));*/
 
 
 app.use(express.json());
