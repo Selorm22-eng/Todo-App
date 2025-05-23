@@ -12,7 +12,7 @@ function Todos() {
   useEffect(() => {
 	const fetchTodos = async () => {
 		try {
-		  const response = await fetch('http://localhost:5000/api/todos', {
+		  const response = await fetch('https://todo-app-3t1o.onrender.com/api/todos', {
 			headers: { Authorization: `Bearer ${token}` },
 		  });
 		  if (!response.ok) {
@@ -38,7 +38,7 @@ function Todos() {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/todos', {
+      const response = await fetch('https://todo-app-3t1o.onrender.com/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ function Todos() {
 
   const handleToggle = async (id, completed) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/todos/${id}`, {
+      const response = await fetch(`https://todo-app-3t1o.onrender.com/api/todos/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ function Todos() {
 
   const handleDelete = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/todos/${id}`, {
+      const response = await fetch(`https://todo-app-3t1o.onrender.com/api/todos/${id}`, {
         method: 'DELETE',
         headers: {
           Authorization: `Bearer ${token}`,
