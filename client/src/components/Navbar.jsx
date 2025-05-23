@@ -12,7 +12,51 @@ function Navbar() {
     };
 
     return (
-        <nav>
+        <nav className="bg-blue-700 text-white px-8 py-4 shadow-md">
+        <div className="container mx-auto flex justify-between items-center">
+          {/* Logo / Home */}
+          <div className="text-xl font-bold">
+            <Link to="/" className="hover:text-blue-200 transition">TodoApp</Link>
+          </div>
+  
+          {/* Nav Links */}
+          <div className="space-x-4 text-sm sm:text-base">
+            {user ? (
+              <>
+                <Link
+                  to="/todos"
+                  className="hover:bg-blue-600 px-4 py-2 rounded-md transition"
+                >
+                  Todos
+                </Link>
+                <button
+                  onClick={handleLogout}
+                  className="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-md transition"
+                >
+                  Logout
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  to="/login"
+                  className="bg-white text-blue-700 hover:bg-gray-200 px-4 py-2 rounded-md transition"
+                >
+                  Login
+                </Link>
+                <Link
+                  to="/signup"
+                  className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-md transition"
+                >
+                  Signup
+                </Link>
+              </>
+            )}
+          </div>
+        </div>
+      </nav>
+        /* <nav>
+            <div className="bg-teal-700 text-white  px-4 font-md py-2 text-3xl border-y-2 border-green-950">
             <Link to="/">Home</Link>
             {user ? (
                 <>
@@ -21,11 +65,12 @@ function Navbar() {
                 </>
             ) : (
                 <>
-                    <Link to="/login">Login</Link>
+                    <Link to="/login" className="px-20">Login</Link>
                     <Link to="/signup">Signup</Link>
                 </>
             )}
-        </nav>
+            </div>
+        </nav>*/
     );
 }
 
