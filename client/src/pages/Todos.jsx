@@ -108,7 +108,7 @@ function Todos() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-start justify-center px-4 py-10">
+    <div className="min-h-screen bg-gray-300 flex items-start justify-center px-4 py-10">
       <div className="bg-white w-full max-w-2xl rounded-xl shadow-md p-6">
         <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">Your Todos</h2>
 
