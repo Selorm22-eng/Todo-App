@@ -12,11 +12,11 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-blue-700 text-white px-8 py-4 shadow-md">
+        <nav className="bg-emerald-800 text-white px-8 py-4 shadow-black  border-b-2 border-yellow-600">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo / Home */}
           <div className="text-xl font-bold">
-            <Link to="/" className="hover:text-blue-200 transition">TodoApp</Link>
+            <Link to="/" className="hover:text-yellow-200 transition">TodoApp</Link>
           </div>
   
           {/* Nav Links */}

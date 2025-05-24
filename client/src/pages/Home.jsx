@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 to-purple-700 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-400 to-teal-900 px-4 shadow-inner">
       <div className="bg-white shadow-xl rounded-2xl p-10 max-w-xl text-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
           Welcome to the Todo App
